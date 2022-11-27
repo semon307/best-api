@@ -73,7 +73,6 @@ export class TopPageController {
 
   @UsePipes(new ValidationPipe())
   @HttpCode(200)
-  @UseGuards(JwtAuthGuard)
   @Get('textSearch/:text')
   async textSearch(@Param('text') text: string) {
     return this.topPageService.findByText(text);
