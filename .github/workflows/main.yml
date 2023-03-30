@@ -10,7 +10,7 @@ jobs:
     steps:
       - uses: actions/checkout@master
       - name: Publish to registy
-        uses: elgohr/Publish-Docker-Github-Action@master
+        uses: elgohr/Publish-Docker-Github-Action@v5
         with:
           registry: docker.pkg.github.com
           name: docker.pkg.github.com/semon307/best-api/best-api
